@@ -1,0 +1,24 @@
+package entity;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+
+@Entity
+@Table(name="instagram")
+public class İnstagramentity {
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	@Column(name="id")
+	private int id;
+	@Column(name=" numberofposts")
+	private int numberofposts;
+	@Column(name="likes")
+	private int likes;
+	@Column(name="comment")
+	private int comment;
+}

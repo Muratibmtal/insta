@@ -1,0 +1,5 @@
+package ibmtal.com.facebook.business.services;
+
+public interface PageService {
+
+}

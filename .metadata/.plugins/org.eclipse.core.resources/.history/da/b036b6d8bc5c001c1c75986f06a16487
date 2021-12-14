@@ -1,0 +1,22 @@
+package ibmtal.com.facebook.business.manager;
+
+import java.util.ArrayList;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import ibmtal.com.facebook.business.services.NewService;
+import ibmtal.com.facebook.database.NewDao;
+import ibmtal.com.facebook.entity.New;
+
+public class NewManager implements NewService {
+	private NewDao newdao;
+	@Autowired
+	public ArrayList<New> getAll(){
+		return new ArrayList<New>(newdao.findAll());
+	}
+	public NewManager(NewDao newdao) {
+		super();
+		this.newdao = newdao;
+	}
+}	

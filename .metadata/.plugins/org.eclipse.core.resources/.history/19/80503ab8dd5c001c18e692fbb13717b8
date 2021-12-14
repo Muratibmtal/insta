@@ -1,0 +1,11 @@
+package database;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+@Service
+public class İnstagramDao {
+	private İnstagramDao instagramdao;
+	@Autowired
+	public  İnstagramDao(İnstagramDao instagramdao)
+}

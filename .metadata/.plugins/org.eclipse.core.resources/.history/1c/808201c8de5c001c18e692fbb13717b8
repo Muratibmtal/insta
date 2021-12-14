@@ -1,0 +1,23 @@
+package business.manager;
+
+import java.util.ArrayList;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import database.İnstagramDao;
+
+@Service
+public class İnstagramManager  implements İnstagramService{
+
+	private İnstagramManager instagramdao;
+	@Autowired
+	public İnstagramManager(İnstagramManager instagramdao) {
+		super();
+		this.instagramdao = instagramdao;
+	}
+	@Override
+	public ArrayList<İnstagram> getAll(){
+		return new ArrayList<İnstagramManager>(İnstagramDao.findAll)
+	}
+	}

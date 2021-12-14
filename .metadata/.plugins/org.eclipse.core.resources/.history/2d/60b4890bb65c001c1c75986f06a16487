@@ -1,0 +1,24 @@
+package ibmtal.com.facebook.entity;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="news")
+public class New {
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	@Column(name="id")
+	private int id;
+	@Column(name="contentlocation")
+	private String contentlocation;
+	@Column(name="contentname")
+	private String contentname;
+	@Column(name="newsplace")
+	private String newsplace;
+	
+}

@@ -1,0 +1,5 @@
+package ibmtal.com.facebook.database;
+
+public interface NewDao {
+
+}

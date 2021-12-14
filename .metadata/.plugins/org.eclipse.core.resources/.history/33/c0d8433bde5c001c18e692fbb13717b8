@@ -1,0 +1,8 @@
+package database;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+@Service
+public interface İnstagramDao  extends JpaRepository<;İnstagram, Integer{
+
+}
